@@ -1,0 +1,31 @@
+.loc[] 
+======
+
+Label-based indexing
+Accesses rows and columns by labels (names).
+Works with the index names and column names.
+
+🧾 Sample DataFrame:
+
+	name	age
+a	Alice	25
+b	Bob	    30
+c	Charlie	35
+
+df.loc['b', 'age']  # returns 30 , here loc takes row "b" and coloumn "age"
+ 
+.iloc[]
+=======
+
+Integer-position-based indexing
+Accesses rows and columns by integer position, just like in a NumPy array.
+Uses zero-based integer indexes.
+
+🧾 Sample DataFrame:
+
+	name	age
+a	Alice	25
+b	Bob	    30
+c	Charlie	35
+
+df.iloc[1, 1] # returns 30 , here iloc take row "1" and coloumn "1"
