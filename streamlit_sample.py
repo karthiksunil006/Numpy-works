@@ -16,6 +16,7 @@ streamlit.success(f"Hello {name}")
 
 num1=streamlit.text_input("Enter the first number : ")
 num2=streamlit.text_input("Enter the second number : ")
+am_gb = streamlit.slider("Select RAM (GB)", min_value=4, max_value=64, step=2, value=16)
 
 #result=int(num1)+int(num2)
 

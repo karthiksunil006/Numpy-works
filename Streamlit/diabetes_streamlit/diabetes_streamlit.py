@@ -52,6 +52,7 @@ def input_features():
     bmi=streamlit.number_input("Enter the bmi : ",0,70,25)
     diabetese_pedigree_function=streamlit.number_input("Enter the diabete pedigree function : ",0,3,1)
     age=streamlit.number_input("Enter the age : ",1,120,33)
+    
 
     data={
         "Pregnancies":pregnancies,
@@ -69,6 +70,8 @@ def input_features():
 
 
 input_df=input_features()
+
+
 
 scaled_input=scaler.transform(input_df)
 
